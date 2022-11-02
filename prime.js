@@ -1,9 +1,9 @@
-let N = 13;
+
 
 function checkPrime(N) {
-  for (let i = 0; i < N; i++) {
-    if (i % N == 0) {
-      count = 0;
+  for (let i = 1; i <= N; i++) {
+    if (N % i == 0) {
+      count++;
     }
   }
   if (count == 2) {
@@ -13,4 +13,4 @@ function checkPrime(N) {
   }
 }
 
-checkPrime();
+checkPrime(13);

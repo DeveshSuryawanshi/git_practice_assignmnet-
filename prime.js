@@ -1,8 +1,9 @@
 
-
+let N = 13;
 function checkPrime(N) {
-  for (let i = 1; i <= N; i++) {
-    if (N % i == 0) {
+  let count = 0;
+  for (let i = 1; i<=N; i++) {
+    if (N %i == 0) {
       count++;
     }
   }
@@ -12,5 +13,5 @@ function checkPrime(N) {
     console.log("Given Number is not Prime");
   }
 }
+checkPrime(N);
 
-checkPrime(13);
